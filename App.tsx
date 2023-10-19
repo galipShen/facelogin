@@ -23,16 +23,16 @@ function App(): JSX.Element {
     <View  style={{flex:1, backgroundColor:"purple", justifyContent:"center"}} >
       <Button 
       title={'Sign in with Google'} onPress={() =>  {
-    GoogleSignin.configure({
-        androidClientId: 'ADD_YOUR_ANDROID_CLIENT_ID_HERE',
-        iosClientId: 'ADD_YOUR_iOS_CLIENT_ID_HERE',
-    });
-GoogleSignin.hasPlayServices().then((hasPlayService) => {
-        if (hasPlayService) {
+        GoogleSignin.configure({
+          androidClientId: '596708267102-kd3o2dg1cfh4d7grv35j3s6rivohdrja.apps.googleusercontent.com',
+          iosClientId: 'ADD_YOUR_iOS_CLIENT_ID_HERE',
+       });
+        GoogleSignin.hasPlayServices().then((hasPlayService) => {
+          if (hasPlayService) {
              GoogleSignin.signIn().then((userInfo) => {
                        console.log(JSON.stringify(userInfo))
              }).catch((e) => {
-             console.log("ERROR IS: " + JSON.stringify(e));
+              console.log("ERROR IS: " + JSON.stringify(e));
              })
         }
 }).catch((e) => {
