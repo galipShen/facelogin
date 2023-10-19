@@ -18,12 +18,13 @@ import {
   statusCodes,
 } from '@react-native-google-signin/google-signin';
 
-import {LoginButton,AccessToken,GraphRequest, GraphRequestManager,  } from 'react-native-fbsdk-next';
+import {Settings ,LoginButton,AccessToken,GraphRequest, GraphRequestManager,  } from 'react-native-fbsdk-next';
 
 function App(): JSX.Element {
+  Settings.initializeSDK();
   return (
     <View  style={{flex:1, backgroundColor:"purple", justifyContent:"center"}} >
-      <Button 
+      {/* <Button 
       title={'Sign in with Google'} onPress={() =>  {
         GoogleSignin.configure({
           androidClientId: '596708267102-kd3o2dg1cfh4d7grv35j3s6rivohdrja.apps.googleusercontent.com',
@@ -40,7 +41,7 @@ function App(): JSX.Element {
 }).catch((e) => {
     console.log("ERROR IS: " + JSON.stringify(e));
 })
-}} />
+}} /> */}
 
 <LoginButton
     onLoginFinished={
