@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">facelogin</string>
+    <string name="facebook_app_id">3500182096909777</string>
 </resources>
