@@ -99,12 +99,14 @@ const styles = StyleSheet.create({
   },
   socialBox: {
     alignItems: 'center',
+    marginHorizontal: '2%',
   },
   googleButton: {
     backgroundColor: 'blue',
     height: '15%',
     width: '100%',
     justifyContent: 'center',
+    marginBottom: '2%',
   },
   googleButtonText: {
     color: 'white',
